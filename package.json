@@ -23,8 +23,11 @@
   ],
   "scripts": {
     "clean": "rm -rf ./dist && mkdir ./dist",
+    "cleanw": "rmdir /s /q dist && mkdir dist",
     "lint": "./node_modules/eslint/bin/eslint.js src/*.js __tests__/*.js *.js",
+    "lintw": "eslint src/*.js __tests__/*.js *.js",
     "build": "npm run clean && npm run lint && ./node_modules/webpack/bin/webpack.js --progress",
+    "buildw": "npm run cleanw && npm run lintw && webpack --progress",
     "test": "jest --coverage"
   },
   "dependencies": {
