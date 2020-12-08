@@ -1,7 +1,7 @@
 import React from "react"; // eslint-disable-line no-unused-vars
 import Plugin from "./plugin";
 //import { AnnotationPlugin } from "sigplot";
-var AccordionPlugin = require("../../node_modules/sigplot/js/plugins.js")
+var AccordionPlugin = require("../node_modules/sigplot/js/plugins.js")
   .AccordionPlugin;
 
 /**
