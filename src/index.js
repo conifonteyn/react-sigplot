@@ -6,3 +6,5 @@ export { default as BlueLayer } from './bluelayer';
 export { default as WebsocketLayer } from './websocketlayer';
 export { default as Layer } from './layer';
 export { default as Plugin } from './plugin';
+export { default as WAnnotationPlugin } from "./annotationplugin";
+export { default as WAccordionPlugin } from "./accordionplugin";
