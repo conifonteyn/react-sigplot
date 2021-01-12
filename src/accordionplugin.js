@@ -13,12 +13,12 @@ var AccordionPlugin = require("../node_modules/sigplot/js/plugins.js")
  */
 export default class WAccordionPlugin extends Plugin {
   componentDidMount() {
-    const { pluginOptions } = this.props;
+    const { pluginOptions,x,y } = this.props;
     this.accplugin = new AccordionPlugin(pluginOptions);
     this.plot.add_plugin(this.accplugin, 2);
     this.accplugin.addListener("accordiontag", function (evt) {});
-    this.accplugin.set_center(0.6);
-    this.accplugin.set_width(0.25);
+    this.accplugin.center(x);
+    this.accplugin.width(y);
     // this.annotations.add_annotation({
     //     x: 0,
     //     y: 0,
